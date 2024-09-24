@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataSample>
+  <configurations>
+    <config><name><![CDATA[LEONEXTPREVIOUS_POSITION]]></name><value><![CDATA[1]]></value></config>
+    <config><name><![CDATA[LEONEXTPREVIOUS_DISPLAY_NAMES]]></name><value><![CDATA[1]]></value></config>
+    <config><name><![CDATA[LEONEXTPREVIOUS_DISPLAY_IMAGE]]></name><value><![CDATA[1]]></value></config>
+    <config><name><![CDATA[LEONEXTPREVIOUS_DISPLAY_PRICE]]></name><value><![CDATA[1]]></value></config>
+</configurations>
+
+<sql>
+<![CDATA[]]></sql>
+
+  <hooks>
+    <hook module="leonextprevious" hook="displayHeader" position="15" exceptions=""/>
+    <hook module="leonextprevious" hook="productFooter" position="1" exceptions=""/>
+    <hook module="leonextprevious" hook="displayLeoNextPrevious" position="1" exceptions=""/>
+    <hook module="leonextprevious" hook="displayLeoNextButton" position="1" exceptions=""/>
+    <hook module="leonextprevious" hook="displayLeoPreviousButton" position="1" exceptions=""/>
+  </hooks>
+</dataSample>

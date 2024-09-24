@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataSample>
+  <configurations>
+    <config><name><![CDATA[LEOSIZECHART_sh_popup]]></name><value><![CDATA[1]]></value></config>
+    <config><name><![CDATA[LEOSIZECHART_width]]></name><value><![CDATA[600]]></value></config>
+    <config><name><![CDATA[LEOSIZECHART_sh_measure]]></name><value><![CDATA[0]]></value></config>
+    <config><name><![CDATA[LEOSIZECHART_sh_global]]></name><value><![CDATA[1]]></value></config>
+    <config><name><![CDATA[LEOSIZECHART_content]]></name><value><![CDATA[]]></value></config>
+    <config><name><![CDATA[LEOSIZECHART_global]]></name><value><![CDATA[]]></value></config>
+</configurations>
+
+<sql>
+<![CDATA[]]></sql>
+
+  <hooks>
+    <hook module="leosizechart" hook="displayHeader" position="14" exceptions=""/>
+    <hook module="leosizechart" hook="actionProductDelete" position="7" exceptions=""/>
+    <hook module="leosizechart" hook="actionProductSave" position="2" exceptions=""/>
+    <hook module="leosizechart" hook="leoProductSizeGuide" position="1" exceptions=""/>
+  </hooks>
+</dataSample>

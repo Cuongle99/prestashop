@@ -1,0 +1,10 @@
+.progress {
+  background: $gray-light-second;
+  height: 6px;
+  border-radius: 3px;
+  &-bar {
+    height: 100%;
+    transition: 0.25s ease-out;
+    border-radius: 3px;
+  }
+}

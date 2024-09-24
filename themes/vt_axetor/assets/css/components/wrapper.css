@@ -1,0 +1,77 @@
+/***************************************************
+  Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+  Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+#wrapper .banner {
+  display: block;
+  margin-bottom: 1.5rem; }
+#wrapper .breadcrumb-bg {
+  margin-bottom: 60px; }
+  [dir] #wrapper .breadcrumb-bg {
+    right: 50%;
+    left: auto;
+    transform: translateX(50%); }
+#wrapper .breadcrumb {
+  padding: 0;
+  background: transparent; }
+  #wrapper .breadcrumb[data-depth="1"] {
+    display: none; }
+  #wrapper .breadcrumb h1,
+  #wrapper .breadcrumb h2 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #fff; }
+    @media (max-width: 1024px) {
+      #wrapper .breadcrumb h1,
+      #wrapper .breadcrumb h2 {
+        font-size: 40px; } }
+  #wrapper .breadcrumb ol {
+    padding-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    top: 18px;
+    left: auto; }
+    [dir] #wrapper .breadcrumb ol {
+      padding-right: 0; }
+  #wrapper .breadcrumb li {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase; }
+    #wrapper .breadcrumb li::after {
+      margin: 0 10px;
+      content: "\f105";
+      font-family: "Font Awesome Light";
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff; }
+      [dir] #wrapper .breadcrumb li::after {
+        content: "\f104"; }
+    #wrapper .breadcrumb li:last-child {
+      margin: 0;
+      color: #fff; }
+      #wrapper .breadcrumb li:last-child::after {
+        content: ""; }
+    #wrapper .breadcrumb li a {
+      color: #fff; }
+
+/*# sourceMappingURL=wrapper.css.map */

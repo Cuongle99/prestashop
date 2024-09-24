@@ -1,0 +1,310 @@
+@import "theme_variables";
+
+/* block top search */
+
+span.no-result {
+  padding: 10px;
+}
+
+form#searchbox {
+  padding-top: 5px;
+  label {
+    color: #333;
+    margin-bottom: 1px;
+  }
+  input#leo_search_query_block {
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    border-radius: 3px !important;
+    height: 18px;
+    margin-top: 10px;
+  }
+  input#search_button {
+    padding: 1px 4px;
+  }
+}
+
+.list-cate-wrapper {
+  position: relative;
+}
+
+.list-cate {
+  width: 100%;
+  padding: 0px;
+}
+
+.cate-item {
+  display: block;
+  padding: 10px;
+}
+
+#leosearchtopbox a.cate-item.active,
+#leosearchtopbox a.cate-item:hover,
+#leosearchbox a.cate-item.active,
+#leosearchbox a.cate-item:hover {
+  background: var(--theme-color-default);
+  color: #fff;
+}
+
+#dropdownListCate,
+#dropdownListCateTop {
+  cursor: pointer;
+  display: block;
+  padding: 5px 0px 5px 5px;
+}
+
+#leosearchtopbox #dropdownListCateTop:hover,
+#leosearchbox #dropdownListCate:hover {
+  color: #414141;
+}
+.search-by-category {
+  .block_content {
+    @include rtl-padding(0, 0, 0, 170px);
+  }
+}
+#leo_search_block_top {
+  .leoproductsearch-content {
+    position: relative;
+    //  display: flex;
+  }
+  .block_content {
+    position: relative;
+    // border: 1px solid $border-color;
+
+    @media (max-width: 575px) {
+      @include rtl-padding(0, 0, 0, 0px);
+    }
+  }
+  .list-cate-wrapper {
+    position: absolute;
+    top: 0;
+    width: 170px;
+    height: 45px;
+    @include rtl-left(0);
+    @media (max-width: 575px) {
+      display: none;
+    }
+    &:before {
+      content: "";
+      width: 1px;
+      height: 25px;
+      position: absolute;
+      top: 10px;
+      @include rtl-right(0);
+      background: #eee;
+    }
+    .select-title {
+      height: 45px;
+      overflow: hidden;
+      line-height: 45px;
+
+      color: #999;
+      i {
+        position: absolute;
+        top: 14px;
+        @include rtl-right(10px);
+      }
+    }
+    .dropdown-menu {
+      font-size: 13px;
+      max-height: 230px;
+      overflow: auto;
+      overflow-x: hidden;
+    }
+  }
+  #dropdownListCateTop {
+    padding: 0 25px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    i {
+      font-size: 14px;
+    }
+  }
+  .form-control {
+    background: none;
+    border: 0;
+    height: 44px;
+    min-height: 44px;
+    line-height: 24px;
+    @include rtl-padding(10px, 50px, 10px, 23px);
+    @include border-radius(25px);
+    outline: 0;
+    background-color: #fff;
+    color: #1c1c1c;
+    font-size: 14px;
+    @include placeholder {
+      opacity: 1;
+      font-size: 14px;
+      line-height: 24px;
+      color: #8b8b8b;
+    }
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+  .btn {
+    width: 50px;
+    height: 44px;
+    line-height: 44px;
+    border: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+    background: none;
+    color: var(--text-color);
+    position: absolute;
+    top: 0;
+    @include rtl-right(0);
+    &:hover {
+      color: var(--theme-color-default);
+    }
+    i {
+      font-size: 0;
+      width: auto;
+      height: auto;
+      margin-top: -2px;
+      &::before {
+        content: "\f002";
+        font-family: $font-icon-5;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+#leo_search_block_top {
+  &.show_search {
+    .title_block {
+      display: block;
+      font-size: 0;
+      color: #000;
+      margin: 0;
+      height: 22px;
+      line-height: 22px;
+      cursor: pointer;
+      &:before {
+        content: "\f002";
+        font-family: $font-icon;
+        font-size: 25px;
+        display: inline-block;
+        transform: rotateY(180deg);
+        font-weight: 900;
+      }
+      &:hover {
+        &:before {
+          color: var(--theme-color-default);
+        }
+      }
+    }
+    #leosearchtopbox {
+      position: absolute;
+      width: 300px;
+      top: 150%;
+      transition: all 0.3s;
+      right: 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      z-index: 999;
+      background: #fff;
+      @media (max-width: 767px) {
+        @include rtl-right(-100px);
+      }
+    }
+  }
+  &.active {
+    #leosearchtopbox {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      top: calc(100% + 10px);
+    }
+  }
+}
+.leoproductsearch-result {
+  position: relative;
+}
+.ac_results {
+  @include rtl-text-align-left();
+}
+
+#leo_search_block_top {
+  .cssload-speeding-wheel {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-width: 2px;
+    @include rtl-right(50px);
+    top: 9px;
+  }
+  .ac_results {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+    margin-top: 13px;
+    width: 100% !important;
+    li {
+      padding: 10px;
+      border: 1px solid #e1e1e1;
+      border-radius: 5px;
+      transition: 0.25s all;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &.ac_over {
+        border-color: var(--theme-color-default);
+        background-color: transparent;
+      }
+      a {
+        display: flex;
+      }
+    }
+    .lps-result-img {
+      img {
+        height: 50px;
+      }
+    }
+    .lps-result-content {
+      @include rtl-padding-left(15px);
+    }
+    .lps-result-title {
+      font-size: 14px;
+      font-weight: 600;
+      font-family: var(--font-family-base);
+      margin-bottom: 10px;
+    }
+    .lps-result-price {
+      font-family: var(--font-family-senary);
+      font-size: 20px;
+    }
+    .all-search-product {
+      margin-top: 10px;
+      a {
+        display: inline-flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: 0.25s all;
+        &::after {
+          content: "\f061";
+          font-family: $font-icon-5;
+          font-size: 14px;
+          @include rtl-margin-left(6px);
+          [dir] & {
+            content: "\f060";
+          }
+        }
+      }
+    }
+  }
+  .search-value-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+  }
+}

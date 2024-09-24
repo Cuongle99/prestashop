@@ -1,0 +1,30 @@
+****templates change:
+
+assets\js\theme.js
+assets\js\thirdPartyNotice.json
+
+*** File tpl change
+
+templates\catalog\_partials\miniatures\category.tpl
+templates\catalog\_partials\miniatures\pack-product.tpl
+templates\catalog\_partials\miniatures\product.tpl
+templates\catalog\_partials\category-header.tpl
+templates\catalog\_partials\product-cover-thumbnails.tpl
+templates\catalog\_partials\product-images-modal.tpl
+templates\catalog\_partials\subcategories.tpl
+templates\checkout\_partials\steps\addresses.tpl
+templates\checkout\_partials\cart-detailed-product-line.tpl
+templates\checkout\_partials\cart-summary-product-line.tpl
+templates\checkout\_partials\order-confirmation-table.tpl
+templates\cms\stores.tpl
+templates\customer\discount.tpl
+templates\layouts\layout-both-columns.tpl
+
+*** module update
+please copy all folders our module in
+
+dependencies/modules/
+
+then replace for folder old module in
+
+public_html /modules

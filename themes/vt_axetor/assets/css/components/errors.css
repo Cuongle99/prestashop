@@ -1,0 +1,129 @@
+/***************************************************
+  Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+  Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+#products #main .page-header,
+#pagenotfound #main .page-header {
+  margin: 2rem 0 3rem; }
+#products #main .page-content,
+#pagenotfound #main .page-content {
+  margin-bottom: 0; }
+#products .page-not-found,
+#pagenotfound .page-not-found {
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 100px; }
+  #products .page-not-found h4,
+  #pagenotfound .page-not-found h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem; }
+  #products .page-not-found .search-widgets,
+  #pagenotfound .page-not-found .search-widgets {
+    float: none;
+    overflow: hidden; }
+    #products .page-not-found .search-widgets input,
+    #pagenotfound .page-not-found .search-widgets input {
+      width: 100%;
+      padding: 13px 23px;
+      color: var(--text-color);
+      background: #fff;
+      border: 1px solid #e1e1e1;
+      min-height: 50px;
+      border-radius: 30px;
+      font-size: 14px;
+      line-height: 20px; }
+    #products .page-not-found .search-widgets form i,
+    #pagenotfound .page-not-found .search-widgets form i {
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      padding: 0; }
+  #products .page-not-found .content,
+  #pagenotfound .page-not-found .content {
+    text-align: center;
+    margin-bottom: 30px; }
+    #products .page-not-found .content .not-found-heading,
+    #pagenotfound .page-not-found .content .not-found-heading {
+      font-family: var(--font-family-senary);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: 400px;
+      line-height: 1;
+      color: #c70a33; }
+      @media (max-width: 1400px) {
+        #products .page-not-found .content .not-found-heading,
+        #pagenotfound .page-not-found .content .not-found-heading {
+          font-size: 300px; } }
+      @media (max-width: 991px) {
+        #products .page-not-found .content .not-found-heading,
+        #pagenotfound .page-not-found .content .not-found-heading {
+          font-size: 200px; } }
+      @media (max-width: 767px) {
+        #products .page-not-found .content .not-found-heading,
+        #pagenotfound .page-not-found .content .not-found-heading {
+          font-size: 150px; } }
+    #products .page-not-found .content h1,
+    #pagenotfound .page-not-found .content h1 {
+      font-size: 64px;
+      line-height: 1.2;
+      margin-bottom: 4px; }
+      @media (max-width: 767px) {
+        #products .page-not-found .content h1,
+        #pagenotfound .page-not-found .content h1 {
+          font-size: 45px; } }
+    #products .page-not-found .content p,
+    #pagenotfound .page-not-found .content p {
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: 500;
+      color: #000;
+      margin-bottom: 38px; }
+    #products .page-not-found .content a,
+    #pagenotfound .page-not-found .content a {
+      display: inline-flex;
+      align-items: center;
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 13px 30px;
+      border-radius: 30px;
+      background-color: var(--theme-color-default);
+      color: #000;
+      transition: 0.25s all; }
+      #products .page-not-found .content a::after,
+      #pagenotfound .page-not-found .content a::after {
+        content: "\f061";
+        font-family: "Font Awesome Light";
+        font-size: 14px;
+        margin-left: 10px; }
+        [dir] #products .page-not-found .content a::after, [dir]
+        #pagenotfound .page-not-found .content a::after {
+          content: "\f060"; }
+      #products .page-not-found .content a:hover,
+      #pagenotfound .page-not-found .content a:hover {
+        background-color: #000;
+        color: #fff; }
+        #products .page-not-found .content a:hover::after,
+        #pagenotfound .page-not-found .content a:hover::after {
+          color: var(--theme-color-default); }
+
+/*# sourceMappingURL=errors.css.map */

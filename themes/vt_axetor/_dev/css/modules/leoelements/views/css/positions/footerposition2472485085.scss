@@ -1,0 +1,33 @@
+@import "theme_variables";
+
+.box_newletter {
+  > .elementor-container {
+    @media (min-width: 1025px) {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .footer_col_logo {
+    .elementor-column-wrap,
+    .elementor-widget-wrap {
+      position: initial;
+    }
+  }
+
+  .footer_logo {
+    position: absolute;
+    bottom: -63px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+.footer_brand {
+  color: $black !important;
+  text-decoration: underline;
+  text-underline-position: under;
+}

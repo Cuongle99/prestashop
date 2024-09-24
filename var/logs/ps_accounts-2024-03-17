@@ -1,0 +1,2 @@
+[2024-03-17 23:36:39] ps_accounts.DEBUG: Error trying to PATCH shop : No $response object [] []
+[2024-03-17 23:42:33] ps_accounts.INFO: Ps_accounts::resetCircuitBreaker [] []

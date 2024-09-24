@@ -1,0 +1,58 @@
+:root {
+  //font family
+  --font-family-base: "Plus Jakarta Sans", sans-serif; // main font
+  --font-family-megamenu: "Plus Jakarta Sans", sans-serif; //font for menu
+  --font-family-slider: "Big Shoulders Text", sans-serif; // font slider
+  --font-family-heading: "Big Shoulders Text", sans-serif; // font for Heading tag
+  --font-family-senary: "Big Shoulders Text", sans-serif;
+  --font-family-septenary: "Plus Jakarta Sans", sans-serif;
+
+  //Color skin
+  --theme-color-default: #ffc700; // skin color
+
+  // Color text
+  --headings-color: #000;
+  --link-color: #000;
+  --link-color-hover: var(--theme-color-default);
+  --text-color: #525252;
+  --price-color: #000; // product page
+
+  //Button
+  --btn-bg: #222; // button
+  --btn-bg-hover: var(--theme-color-default);
+  --btn-color: #fff;
+  --btn-color-hover: #000;
+
+  //Product item
+  --product-background: transparent;
+  --product-name-color: #000;
+  --product-name-color-hover: var(--theme-color-default);
+  --product-price-color: #373a3c; // Product price
+  --product-regular-price-color: #8b8b8b; // Old product price
+
+  --product-button-bg: transparent;
+  --product-button-color: #000;
+  --product-button-bg-hover: #f5f5f5;
+  --product-button-color-hover: #000;
+
+  //Product flag
+  --on-sale-badge-background: #f39d72;
+  --on-sale-badge-color: #fff;
+  --new-badge-background: #716fd6;
+  --new-badge-color: #fff;
+  --sale-badge-background: #c70a33;
+  --sale-badge-color: #fff;
+  --online-only-background: #24b9d7;
+  --online-only-color: #fff;
+  --pack-badge-background: #000;
+  --pack-badge-color: #fff;
+
+  //Boxes (including Sidebars)
+  --block-background: #fff;
+  --block-inner-background: transparent;
+  --block-heading-bg: none;
+  --block-heading-color: #000;
+  --block-text: var(--text-color);
+  --block-link-color: var(--text-color);
+  --block-link-color-hover: var(--theme-color-default);
+}

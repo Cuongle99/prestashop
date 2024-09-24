@@ -1,0 +1,32 @@
+/***************************************************
+  Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+  Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+@media (max-width: 767px) {
+  .linklist-toggle span.icon-toggle {
+    color: #000;
+    font-family: "Font Awesome Regular"; }
+
+  .linklist-toggle {
+    justify-content: flex-start; } }
+.footer_logo {
+  text-align: center; }
+
+/*# sourceMappingURL=footerposition3292371888.css.map */

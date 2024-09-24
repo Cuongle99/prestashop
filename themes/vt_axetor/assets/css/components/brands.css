@@ -1,0 +1,71 @@
+/***************************************************
+  Mixins Themes 
+/***************************************************/
+/* Mixin Normal*/
+/* Mixin Clear */
+/* Mixin Border */
+/*background RGBA
+============================================*/
+/***************************************************
+  Mixins RTL Themes 
+/***************************************************/
+/************************************ 
+	Override Bootstrap 
+*************************************/
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors 
+ */
+/***********************************************************************/
+#manufacturer #main ul .brand {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  transition: 0.4s ease-out;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1; }
+  #manufacturer #main ul .brand-infos p {
+    margin-bottom: 0; }
+  #manufacturer #main ul .brand-infos a {
+    display: inline-block; }
+  #manufacturer #main ul .brand:hover {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2); }
+  #manufacturer #main ul .brand-products {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px; }
+    #manufacturer #main ul .brand-products .btn {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--link-color);
+      padding: 0; }
+      #manufacturer #main ul .brand-products .btn:hover {
+        color: var(--link-color-hover); }
+  #manufacturer #main ul .brand-img img {
+    filter: brightness(0); }
+  #manufacturer #main ul .brand-img a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: ""; }
+
+@media (max-width: 991px) {
+  #manufacturer #main ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center; } }
+
+/*# sourceMappingURL=brands.css.map */

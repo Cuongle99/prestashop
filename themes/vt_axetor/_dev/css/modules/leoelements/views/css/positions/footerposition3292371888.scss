@@ -1,0 +1,15 @@
+@import "theme_variables";
+
+@media (max-width: 767px) {
+  .linklist-toggle span.icon-toggle {
+    color: #000;
+    font-family: $font-icon-5;
+  }
+  .linklist-toggle {
+    justify-content: flex-start;
+  }
+}
+
+.footer_logo {
+  text-align: center;
+}

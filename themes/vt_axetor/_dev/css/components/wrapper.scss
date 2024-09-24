@@ -1,0 +1,80 @@
+@import "theme_variables";
+
+#wrapper {
+  // padding-top: 1.563rem;
+  .banner {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  .breadcrumb-bg {
+    margin-bottom: 60px;
+    [dir] & {
+      right: 50%;
+      left: auto;
+      transform: translateX(50%);
+    }
+  }
+
+  .breadcrumb {
+    padding: 0;
+    background: transparent;
+
+    &[data-depth="1"] {
+      display: none;
+    }
+    h1,
+    h2 {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      color: $white;
+      @media (max-width: 1024px) {
+        font-size: 40px;
+      }
+    }
+
+    ol {
+      padding-left: 0;
+      margin-bottom: 0;
+      position: absolute;
+      top: 18px;
+      left: auto;
+      [dir] & {
+        padding-right: 0;
+      }
+    }
+
+    li {
+      display: inline-flex;
+      align-items: center;
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      &::after {
+        margin: 0 10px;
+        content: "\f105";
+        font-family: $font-icon-6;
+        font-size: 12px;
+        font-weight: 600;
+        color: $white;
+        [dir] & {
+          content: "\f104";
+        }
+      }
+
+      &:last-child {
+        margin: 0;
+        color: $white;
+
+        &::after {
+          content: "";
+        }
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}

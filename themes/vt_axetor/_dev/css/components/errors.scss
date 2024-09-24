@@ -1,0 +1,111 @@
+@import "theme_variables";
+
+#products,
+#pagenotfound {
+  #main {
+    .page-header {
+      margin: 2rem 0 3rem;
+    }
+    .page-content {
+      margin-bottom: 0;
+    }
+  }
+  .page-not-found {
+    max-width: 650px;
+    margin: 0 auto;
+    h4 {
+      font-size: $base-font-size;
+      font-weight: 700;
+      margin: 0.5rem 0 1rem;
+    }
+    .search-widgets {
+      float: none;
+      overflow: hidden;
+      input {
+        width: 100%;
+        padding: 13px 23px;
+        color: var(--text-color);
+        background: #fff;
+        border: 1px solid #e1e1e1;
+        min-height: 50px;
+        border-radius: 30px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      form {
+        i {
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+          padding: 0;
+        }
+      }
+    }
+    margin-top: 100px;
+    .content {
+      text-align: center;
+      margin-bottom: 30px;
+      .not-found-heading {
+        font-family: var(--font-family-senary);
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 400px;
+        line-height: 1;
+        color: #c70a33;
+        @media (max-width: 1400px) {
+          font-size: 300px;
+        }
+        @media (max-width: 991px) {
+          font-size: 200px;
+        }
+        @media (max-width: 767px) {
+          font-size: 150px;
+        }
+      }
+      h1 {
+        font-size: 64px;
+        line-height: 1.2;
+        margin-bottom: 4px;
+        @media (max-width: 767px) {
+          font-size: 45px;
+        }
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 38px;
+      }
+      a {
+        display: inline-flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 13px 30px;
+        border-radius: 30px;
+        background-color: var(--theme-color-default);
+        color: #000;
+        transition: 0.25s all;
+        &::after {
+          content: "\f061";
+          font-family: $font-icon-6;
+          font-size: 14px;
+          margin-left: 10px;
+          [dir] & {
+            content: "\f060";
+          }
+        }
+        &:hover {
+          background-color: #000;
+          color: #fff;
+          &::after {
+            color: var(--theme-color-default);
+          }
+        }
+      }
+    }
+  }
+}
